@@ -1,0 +1,11 @@
+import tkinter as tk
+
+class SpotifyScreen(tk.Frame):
+    def __init__(self, root, app):
+        super().__init__(root, bg="black")
+
+        tk.Label(self, text="Spotify", fg="white", bg="black", font=("Arial", 20)).pack(pady=20)
+
+        tk.Button(self, text="⬅ Volver", command=lambda: app.show("Dashboard")).pack()
+
+        # Aquí luego metes tu lógica de Spotipy
