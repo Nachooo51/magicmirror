@@ -26,9 +26,5 @@ class App:
         frame = self.frames[name]
         frame.tkraise()
 
-        # 👇 importante para Spotify (y futuras screens con eventos)
-        if hasattr(frame, "on_show"):
-            frame.on_show()
-
     def run(self):
         self.root.mainloop()
